@@ -7,6 +7,43 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/images/banner-img.jpg);
+  background-size: cover;
+}
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+}
+.banner .btn {
+  font-size: 1em;
+  color: #fff;
+  background: #0d6efd;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.banner .btn:hover {
+  letter-spacing: 3px;
+}
 .form-width {
   width: 500px;
 }
@@ -35,6 +72,7 @@ td {
 }
 .table_icon_style {
   font-size: 10px;
+  cursor: pointer;
 }
 .count:before {
   counter-increment: section;
@@ -47,12 +85,14 @@ td {
 .pagination_icon_style {
   border: none;
   outline: none;
+  cursor:pointer;
   background: #f6f6f6;
   font-size: 13px;
 }
 .pagination_number_style {
   border-radius: 50%;
   font-size: 10px;
+  cursor: pointer;
 }
 
 code {
