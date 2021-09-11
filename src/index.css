@@ -1,13 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  background-color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.form-width {
+  width: 500px;
+}
+.input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+.btn-style {
+  transition: 0.5s;
+}
+.btn-style:hover {
+  letter-spacing: 10px;
+}
+table {
+  counter-reset: section;
+  border-radius: 5px;
+}
+th {
+  font-size: 13px;
+  font-weight: 300;
+}
+td {
+  font-size: 13px;
+  font-weight: 500;
+}
+.table_icon_style {
+  font-size: 10px;
+}
+.count:before {
+  counter-increment: section;
+  content: counter(section);
+}
+.err-txt {
+  font-size: 10px;
+  color: red;
+}
+.pagination_icon_style {
+  border: none;
+  outline: none;
+  background: #f6f6f6;
+  font-size: 13px;
+}
+.pagination_number_style {
+  border-radius: 50%;
+  font-size: 10px;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (max-width: 768px) {
+  .form-width {
+    width: 300px;
+  }
+  .table_width {
+    width: 500px;
+  }
+  th {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  td {
+    font-size: 9px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 576px) {
+  .table_width {
+    width: 300px;
+  }
+  th {
+    font-size: 8px;
+    font-weight: 300;
+  }
+  td {
+    font-size: 8px;
+    font-weight: 500;
+  }
 }
